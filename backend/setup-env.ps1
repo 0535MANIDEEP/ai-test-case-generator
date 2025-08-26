@@ -1,8 +1,8 @@
 # PowerShell script to setup environment variables
 $envContent = @"
 PORT=5000
-MONGODB_URI=mongodb+srv://manideepdaram:HELLO!nani10@test-case-generator.oqzzpdc.mongodb.net/test-case-generator?retryWrites=true&w=majority&appName=test-case-generator
-JWT_SECRET=super-secret-jwt-key-for-test-case-generator-app
+MONGODB_URI=mongodb+srv://<username>:<password>@your-cluster.mongodb.net/test-case-generator
+JWT_SECRET=<your-secure-jwt-secret>
 NODE_ENV=development
 "@
 
