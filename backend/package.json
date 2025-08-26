@@ -1,0 +1,49 @@
+{
+  "name": "ai-test-case-generator-backend",
+  "version": "1.0.0",
+  "description": "Backend API for AI Test Case Generator",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "echo 'Backend build complete'",
+    "setup": "node setup-environment.js"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^2.6.2",
+    "ai-test-case-generator": "file:..",
+    "aws-sdk": "^2.1435.0",
+    "axios": "^1.11.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.4.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.8.1",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "multer": "^1.4.4",
+    "openai": "^5.15.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "mongodb-memory-server": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "huggingface",
+    "test-cases",
+    "api"
+  ],
+  "author": "AI Test Case Generator Team",
+  "license": "MIT"
+}
